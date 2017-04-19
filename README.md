@@ -1,5 +1,5 @@
 # download-from-audioknigi.club
-Скрипт для скачивания книг с сайта audioknigi.club
+Скрипт для скачивания аудиокниг с сайта audioknigi.club
 
 Для работы скритпа нужен браузер firefox и плагин greasemonkey (для добавления пользовательских скриптов на страницу).
 
