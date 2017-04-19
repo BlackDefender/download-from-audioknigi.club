@@ -50,7 +50,9 @@
 			backgroundPosition: 'center'
 		};
 		for(var option in style){
-			btn.style[option] = style[option];
+			if(style.hasOwnProperty(option)){
+				btn.style[option] = style[option];
+			}
 		}
 		btn.addEventListener('click', downloadBook);
 		document.body.appendChild(btn);
