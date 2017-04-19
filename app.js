@@ -1,24 +1,18 @@
-// ==UserScript==
-// @name        download audiobook from audioknigi.club
-// @namespace   http://audioknigi.club
-// @version     2
-// @grant       none
-// ==/UserScript==
 (function(){
 	
 	function setFile(data, fileName) {
 	    var blob, url, a;
-	    blob = new Blob( [ data ] );
+	    blob = new Blob([data]);
 	    if(blob){
 	        url = window.URL.createObjectURL(blob);
 	        a = document.createElement('a');
 	        a.style.display = 'none';
 	        a.href = url;
 	        a.download = fileName;
-			document.body.appendChild(a);
+		document.body.appendChild(a);
 	        a.click();
 	        window.URL.revokeObjectURL(url);
-			document.body.removeChild(a);
+		document.body.removeChild(a);
 	    }
 	}
 	
