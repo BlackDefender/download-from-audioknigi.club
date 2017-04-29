@@ -1,4 +1,4 @@
-(function(){
+document.addEventListener('DOMContentLoaded', function(){
 	
 	function setFile(data, fileName) {
 	    var blob, url, a;
@@ -61,4 +61,4 @@
 	if(document.querySelector('audio')){
 		setDownloadButton();
 	}
-})();
+});
