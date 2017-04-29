@@ -16,6 +16,7 @@
 Устанавливаем плагин Tampermonkey.
 Кликаем на иконке плагина, выбираем пункт Добавить новый скрипт.
 Убираем имеющийся в редакторе текст и вставляем следующий:
+```
 // ==UserScript==
 // @name         Download form audioknigi.club
 // @namespace    https://audioknigi.club/
@@ -25,7 +26,7 @@
 // @run-at       document-body
 // @grant        none
 // ==/UserScript==
-
+```
 После добавляем код из файла app.js.
 Сохраняем.
 
